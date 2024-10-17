@@ -1,0 +1,37 @@
+{
+  "files_list": [
+    {
+      "function_name": "consume_snowflake.py",
+      "function_file_path": "consume_snowflake.py",
+      "function_config_path": "function_config/consume_snowflake.json"
+    },
+    {
+      "function_name": "model_input.py",
+      "function_file_path": "model_input.py"
+    },
+    {
+      "function_name": "dbscan_cluster.py",
+      "function_file_path": "clustering/dbscan_cluster.py",
+      "function_config_path": "clustering/function_config/dbscan_cluster.json"
+    },
+    {
+      "function_name": "merge_columns.py",
+      "function_file_path": "clustering/merge_columns.py",
+      "function_config_path": "clustering/function_config/merge_columns.json"
+    },
+    {
+      "function_name": "impute_by_value.py",
+      "function_file_path": "clustering/impute_by_value.py",
+      "function_config_path": "clustering/function_config/impute_by_value.json"
+    },
+    {
+      "function_name": "impute_by_type.py",
+      "function_file_path": "clustering/impute_by_type.py",
+      "function_config_path": "clustering/function_config/impute_by_type.json"
+    },
+    {
+      "function_name": "lta_preprocessing.py",
+      "function_file_path": "clustering/lta_preprocessing.py"
+    }
+  ]
+}
