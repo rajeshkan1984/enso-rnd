@@ -1,4 +1,5 @@
 import os
+import base64
 import traceback
 import pandas as pd
 from uuid import uuid4
@@ -110,7 +111,7 @@ class ConsumeSnowflake:
         Returns DB for Application data
         :return: Application DB name
         """
-        config = {"user": self.user_name, "password": self.password, "account": self.account_identifier}
+        config = {"user": self.user_name, "password": base64.b64decode(self.password).decode('utf-8'), "account": self.account_identifier}
         if self.role:
             config.update({"role": self.role})
         if self.warehouse:
