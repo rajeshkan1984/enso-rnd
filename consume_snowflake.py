@@ -1,4 +1,5 @@
 import os
+import ssl
 import traceback
 import pandas as pd
 from uuid import uuid4
@@ -119,7 +120,7 @@ class ConsumeSnowflake:
             config.update({"database": self.database})
         if self.schema:
             config.update({"schema": self.schema})
-        conn = snowconn.connect(**config, insecure=True)
+        conn = snowconn.connect(**config, ssl=ssl._create_unverified_context())
         return conn
 
     def __remove_local_file(self, path):
