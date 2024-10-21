@@ -6,11 +6,11 @@ import snowflake.connector as snowconn
 from xpms_file_storage.file_handler import XpmsResource, LocalResource
 
 NAMESPACE = os.getenv("MINIO_BUCKET_NAME", "DEFAULT")
+user_name = os.getenv("SNOWFLAKE_USER", "enso_svc")
+password = os.getenv("SNOWFLAKE_PASSWORD", "Bsadf118g")
 
 
 class ConsumeSnowflake:
-    user_name = os.getenv("SNOWFLAKE_USER", None)
-    password = os.getenv("SNOWFLAKE_PASSWORD", None)
     account_identifier = None
     query = None
     merge_data = False
@@ -83,9 +83,9 @@ class ConsumeSnowflake:
         validate required config
         :return: None
         """
-        if not self.user_name:
+        if not user_name:
             raise KeyError("'user name' is required in config")
-        if not self.password:
+        if not password:
             raise KeyError("'password' is required in config")
         if not self.account_identifier:
             raise KeyError("'account identifier' is required in config")
@@ -110,7 +110,7 @@ class ConsumeSnowflake:
         Returns DB for Application data
         :return: Application DB name
         """
-        config = {"user": self.user_name, "password": self.password, "account": self.account_identifier}
+        config = {"user": user_name, "password": password, "account": self.account_identifier}
         if self.role:
             config.update({"role": self.role})
         if self.warehouse:
