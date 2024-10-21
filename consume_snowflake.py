@@ -119,7 +119,7 @@ class ConsumeSnowflake:
             config.update({"database": self.database})
         if self.schema:
             config.update({"schema": self.schema})
-        conn = snowconn.connect(**config)
+        conn = snowconn.connect(**config, insecure=True)
         return conn
 
     def __remove_local_file(self, path):
