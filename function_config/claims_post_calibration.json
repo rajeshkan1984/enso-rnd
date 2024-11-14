@@ -1,0 +1,50 @@
+{
+  "name": "claims_post_calibration",
+  "function_id": "0ba76850-8a4e-443b-967c-cb133924c692",
+  "version_id": "e6e4a6fb-98f9-4899-91e7-bb0eff152f73",
+  "config": [
+    {
+      "fieldType": "dropdown",
+      "config_path": "config.functionconfiguration.is_claim",
+      "data_type": "boolean",
+      "description": "Select Claim",
+      "hidden": false,
+      "multi_select": false,
+      "name": "Claim Level",
+      "op_type": "categorical",
+      "options": [true,false],
+      "ui_component": "",
+      "value": false,
+      "_XpmsObjectMixin__api_version": "1.0.13",
+      "_XpmsObjectMixin__type": "CategoricalListConfiguration"
+    },
+    {
+      "fieldType": "textbox",
+      "config_path": "config.functionconfiguration.no_of_claims",
+      "data_type": "integer",
+      "description": "Provide Number of top claims",
+      "hidden": false,
+      "multi_select": false,
+      "name": "Number of top claims",
+      "op_type": "continuous",
+      "ui_component": "",
+      "value": 10,
+      "_XpmsObjectMixin__api_version": "1.0.13",
+      "_XpmsObjectMixin__type": "StringConfiguration"
+    },
+    {
+      "fieldType": "textbox",
+      "config_path": "config.functionconfiguration.threshold",
+      "data_type": "integer",
+      "description": "Provide Threshold Calibrated Score",
+      "hidden": false,
+      "multi_select": false,
+      "name": "Threshold",
+      "op_type": "continuous",
+      "ui_component": "",
+      "value": null,
+      "_XpmsObjectMixin__api_version": "1.0.13",
+      "_XpmsObjectMixin__type": "StringConfiguration"
+    }
+  ]
+}

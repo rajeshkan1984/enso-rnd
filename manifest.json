@@ -1,37 +1,38 @@
 {
   "files_list": [
     {
-      "function_name": "consume_snowflake.py",
-      "function_file_path": "consume_snowflake.py",
-      "function_config_path": "function_config/consume_snowflake.json"
-    },
-    {
       "function_name": "model_input.py",
       "function_file_path": "model_input.py"
     },
     {
-      "function_name": "dbscan_cluster.py",
-      "function_file_path": "clustering/dbscan_cluster.py",
-      "function_config_path": "clustering/function_config/dbscan_cluster.json"
+      "function_name": "lta_cls",
+      "function_file_path": "ML_functions/lta_model/lta_cls.py",
+      "function_category": "ml"
     },
     {
-      "function_name": "merge_columns.py",
-      "function_file_path": "clustering/merge_columns.py",
-      "function_config_path": "clustering/function_config/merge_columns.json"
+      "function_name": "cluster_based_lof",
+      "function_file_path": "ML_functions/cblof/cluster_based_lof.py",
+      "function_category": "ml"
     },
     {
-      "function_name": "impute_by_value.py",
-      "function_file_path": "clustering/impute_by_value.py",
-      "function_config_path": "clustering/function_config/impute_by_value.json"
+      "function_name": "gaussian_mixture_model",
+      "function_file_path": "ML_functions/gmm/gaussian_mixture_model.py",
+      "function_category": "ml"
     },
     {
-      "function_name": "impute_by_type.py",
-      "function_file_path": "clustering/impute_by_type.py",
-      "function_config_path": "clustering/function_config/impute_by_type.json"
+      "function_name": "isolation_forest",
+      "function_file_path": "ML_functions/isof/isolation_forest.py",
+      "function_category": "ml"
     },
     {
-      "function_name": "lta_preprocessing.py",
-      "function_file_path": "clustering/lta_preprocessing.py"
+      "function_name": "filter_column",
+      "function_file_path": "filter_column.py",
+      "function_config_path": "function_config/filter_column.json"
+    },
+    {
+      "function_name": "claims_post_calibration",
+      "function_file_path": "claims_post_calibration.py",
+      "function_config_path": "function_config/claims_post_calibration.json"
     }
   ]
 }
