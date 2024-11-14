@@ -26,8 +26,7 @@
     },
     {
       "function_name": "filter_column",
-      "function_file_path": "filter_column.py",
-      "function_config_path": "function_config/filter_column.json"
+      "function_file_path": "filter_column.py"
     },
     {
       "function_name": "claims_post_calibration",
